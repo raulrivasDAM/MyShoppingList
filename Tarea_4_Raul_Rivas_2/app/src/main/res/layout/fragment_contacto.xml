@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/idContacto"
+        android:layout_width="57dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="  id"
+        app:layout_constraintEnd_toStartOf="@+id/txtNombreContacto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNombreContacto"
+        android:layout_width="95dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="Nombre del contacto"
+        app:layout_constraintEnd_toStartOf="@+id/txtTelefono"
+        app:layout_constraintStart_toEndOf="@+id/idContacto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTelefono"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        android:text="6011153330"
+        app:layout_constraintEnd_toStartOf="@+id/btnCompartir"
+        app:layout_constraintStart_toEndOf="@+id/txtNombreContacto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCompartir"
+        android:layout_width="97dp"
+        android:layout_height="41dp"
+        android:layout_weight="1"
+        android:text="SHARE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

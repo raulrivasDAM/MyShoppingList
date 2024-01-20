@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.add.AddProductFragment">
+
+
+    <EditText
+        android:id="@+id/edtNombreNuevoProd"
+        android:layout_width="191dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCarro" />
+
+    <ImageView
+        android:id="@+id/imgCarro"
+        android:layout_width="340dp"
+        android:layout_height="233dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/producto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="177dp"
+        android:layout_height="59dp"
+        android:text="AGREGAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFoto"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <ImageButton
+        android:id="@+id/imgButton"
+        android:layout_width="118dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toEndOf="@+id/txtFoto"
+        app:layout_constraintTop_toBottomOf="@+id/edtPrecio" />
+
+    <TextView
+        android:id="@+id/txtFoto"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Sacar foto del producto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPrecio" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:text="Precio producto"
+        app:layout_constraintTop_toBottomOf="@+id/edtNombreNuevoProd"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <EditText
+        android:id="@+id/edtDescripcion"
+        android:layout_width="184dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toEndOf="@+id/edtNombreNuevoProd"
+        app:layout_constraintTop_toBottomOf="@+id/imgCarro" />
+
+    <EditText
+        android:id="@+id/edtPrecio"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/edtDescripcion"
+        tools:layout_editor_absoluteX="218dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
